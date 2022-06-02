@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border outline-none;
+}
+
+*::-webkit-scrollbar {
+  @apply w-3 bg-zinc-400;
+}
+
+*::-webkit-scrollbar-track {
+  @apply m-0 rounded-md;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply rounded-sm;
+}
+
+*::-webkit-scrollbar-button {
+  @apply h-0;
+}
+
+html {
+  @apply w-full h-full leading-none;
+}
+
+body {
+  @apply w-full h-full flex flex-col justify-center items-center text-sm overflow-x-hidden;
+}
+
+#root {
+  @apply w-full h-auto absolute top-0 flex flex-col justify-center items-center ;
+}
+
+ul {
+  @apply list-none;
+}
+
+input,
+select {
+  @apply p-0 leading-none m-0 focus:outline-none;
+}
+
+a:link,
+a:visited {
+  @apply text-blue-600 hover:text-blue-500;
+}
+
